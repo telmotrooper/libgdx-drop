@@ -27,7 +27,7 @@ public class GameScreen implements Screen {
     Rectangle bucket;
     Array<Rectangle> raindrops;
     long lastDropTime;
-    int dropsGathered;
+    int dropsGathered, dropsMissed;
 
     public GameScreen(final Drop gam) {
         this.game = gam;
@@ -88,7 +88,8 @@ public class GameScreen implements Screen {
         // begin a new batch and draw the bucket and
         // all drops
         game.batch.begin();
-        game.font.draw(game.batch, "Drops Collected: " + dropsGathered, 0, 480);
+        game.font.draw(game.batch, "Drops Collected: " + dropsGathered, 0, 475);
+        game.font.draw(game.batch, "Drops Missed: " + dropsMissed, 0, 455);
         game.batch.draw(bucketImage, bucket.x, bucket.y, bucket.width, bucket.height);
         for (Rectangle raindrop : raindrops) {
             game.batch.draw(dropImage, raindrop.x, raindrop.y);
@@ -103,9 +104,9 @@ public class GameScreen implements Screen {
             bucket.x = touchPos.x - 64 / 2;
         }
         if (Gdx.input.isKeyPressed(Keys.LEFT))
-            bucket.x -= 200 * Gdx.graphics.getDeltaTime();
+            bucket.x -= 450 * Gdx.graphics.getDeltaTime();
         if (Gdx.input.isKeyPressed(Keys.RIGHT))
-            bucket.x += 200 * Gdx.graphics.getDeltaTime();
+            bucket.x += 450 * Gdx.graphics.getDeltaTime();
 
         // make sure the bucket stays within the screen bounds
         if (bucket.x < 0)
@@ -124,8 +125,10 @@ public class GameScreen implements Screen {
         while (iter.hasNext()) {
             Rectangle raindrop = iter.next();
             raindrop.y -= 200 * Gdx.graphics.getDeltaTime();
-            if (raindrop.y + 64 < 0)
+            if (raindrop.y + 64 < 0) {
+                dropsMissed++;
                 iter.remove();
+            }
             if (raindrop.overlaps(bucket)) {
                 dropsGathered++;
                 dropSound.play();
