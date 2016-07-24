@@ -21,6 +21,7 @@ public class GameScreen implements Screen {
 
     Texture dropImage;
     Texture bucketImage;
+    Texture rainBackground;
     Sound dropSound, drippingSound;
     Music rainMusic;
     OrthographicCamera camera;
@@ -29,17 +30,20 @@ public class GameScreen implements Screen {
     long lastDropTime;
     int dropsGathered, dropsMissed;
 
-    public GameScreen(final Drop gam) {
-        this.game = gam;
+    public GameScreen(final Drop game) {
+        this.game = game;
 
         // load the images for the droplet and the bucket, 64x64 pixels each
-        dropImage = new Texture(Gdx.files.internal("droplet.png"));
-        bucketImage = new Texture(Gdx.files.internal("bucket.png"));
+        dropImage = new Texture(Gdx.files.internal("images/droplet.png"));
+        bucketImage = new Texture(Gdx.files.internal("images/bucket.png"));
+
+        // load the background image, which is 800x480 pixels (the size of the screen)
+        rainBackground = new Texture(Gdx.files.internal("images/rain_bg.png"));
 
         // load the drop sound effect and the rain background "music"
-        dropSound = Gdx.audio.newSound(Gdx.files.internal("drop.mp3"));
-        drippingSound = Gdx.audio.newSound(Gdx.files.internal("dripping.mp3"));
-        rainMusic = Gdx.audio.newMusic(Gdx.files.internal("rain.mp3"));
+        dropSound = Gdx.audio.newSound(Gdx.files.internal("sounds/drop.mp3"));
+        drippingSound = Gdx.audio.newSound(Gdx.files.internal("sounds/dripping.mp3"));
+        rainMusic = Gdx.audio.newMusic(Gdx.files.internal("sounds/rain.mp3"));
         rainMusic.setLooping(true);
 
         // create the camera and the SpriteBatch
@@ -89,12 +93,13 @@ public class GameScreen implements Screen {
         // begin a new batch and draw the bucket and
         // all drops
         game.batch.begin();
-        game.font.draw(game.batch, "Drops Collected: " + dropsGathered, 0, 475);
-        game.font.draw(game.batch, "Drops Missed: " + dropsMissed, 0, 455);
+        game.batch.draw(rainBackground, 0, 0);
         game.batch.draw(bucketImage, bucket.x, bucket.y, bucket.width, bucket.height);
         for (Rectangle raindrop : raindrops) {
             game.batch.draw(dropImage, raindrop.x, raindrop.y);
         }
+        game.font.draw(game.batch, "Drops Collected: " + dropsGathered, 5, 475);
+        game.font.draw(game.batch, "Drops Missed: " + dropsMissed, 5, 455);
         game.batch.end();
 
         // process user input
