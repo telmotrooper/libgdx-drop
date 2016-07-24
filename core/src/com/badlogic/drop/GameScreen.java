@@ -2,6 +2,7 @@ package com.badlogic.drop;
 
 import java.util.Iterator;
 
+import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Screen;
@@ -19,7 +20,7 @@ import com.badlogic.gdx.utils.TimeUtils;
 public class GameScreen implements Screen {
     final Drop game;
 
-    Texture dropImage;
+    Texture dropImage, dropImage2;
     Texture bucketImage;
     Texture rainBackground;
     Sound dropSound, drippingSound;
@@ -33,8 +34,9 @@ public class GameScreen implements Screen {
     public GameScreen(final Drop game) {
         this.game = game;
 
-        // load the images for the droplet and the bucket, 64x64 pixels each
+        // load the images for the droplets and the bucket, 64x64 pixels each
         dropImage = new Texture(Gdx.files.internal("images/droplet.png"));
+        dropImage2 = new Texture(Gdx.files.internal("images/droplet2.png"));
         bucketImage = new Texture(Gdx.files.internal("images/bucket.png"));
 
         // load the background image, which is 800x480 pixels (the size of the screen)
@@ -103,6 +105,15 @@ public class GameScreen implements Screen {
         game.batch.end();
 
         // process user input
+
+        // if the game is running on Desktop, the bucket will follow the mouse
+        if(Gdx.app.getType() == Application.ApplicationType.Desktop) {
+            Vector3 mousePos = new Vector3();
+            mousePos.set(Gdx.input.getX(), Gdx.input.getY(), 0);
+            camera.unproject(mousePos);
+            bucket.x = mousePos.x - 64 / 2;
+        }
+
         if (Gdx.input.isTouched()) {
             Vector3 touchPos = new Vector3();
             touchPos.set(Gdx.input.getX(), Gdx.input.getY(), 0);
