@@ -1,131 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactManager">
-    <artifact type="war" name="Gradle : libgdx-drop : html-draft-1.0.war">
-      <output-path>$PROJECT_DIR$/out/artifacts/html</output-path>
-      <properties id="gradle-properties">
-        <options external-project-path="$PROJECT_DIR$" />
-      </properties>
-      <root id="archive" name="html-draft-1.0.war">
-        <element id="javaee-facet-resources" facet="html/web/Web Gradle : html-draft-1.0.war" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="html" />
-          </element>
-          <element id="directory" name="lib">
-            <element id="archive" name="libgdx-drop-core-1.0.jar">
-              <element id="module-output" name="core" />
-            </element>
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/d39621b517bc4791493378745ac45e272b65b9eb/gdx-backend-gwt-1.9.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/aa9eb1f5dcfb894a6cc47aa0368f87a89c98c7e8/gdx-backend-gwt-1.9.3-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/1a3775429980a6c8da0cdefb656ad1dabf91d629/gdx-1.9.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.6.0/d1e40c23bf78192482ee76c93619a10b4ea649f7/gwt-servlet-2.6.0.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.1/c078b1b8cc0281214b0eb458d2c283d039374fad/gwt-user-2.6.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20090211/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar" />
-          </element>
-        </element>
-        <element id="directory" name="META-INF">
-          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/html/exploded/html-draft-1.0.war/META-INF/MANIFEST.MF" />
-        </element>
-      </root>
-    </artifact>
-    <artifact type="exploded-war" name="Gradle : libgdx-drop : html-draft-1.0.war (exploded)">
-      <output-path>$PROJECT_DIR$/out/artifacts/html/exploded/html-draft-1.0.war</output-path>
-      <properties id="gradle-properties">
-        <options external-project-path="$PROJECT_DIR$" />
-      </properties>
-      <root id="root">
-        <element id="javaee-facet-resources" facet="html/web/Web Gradle : html-draft-1.0.war" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="html" />
-          </element>
-          <element id="directory" name="lib">
-            <element id="archive" name="libgdx-drop-core-1.0.jar">
-              <element id="module-output" name="core" />
-            </element>
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/d39621b517bc4791493378745ac45e272b65b9eb/gdx-backend-gwt-1.9.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/aa9eb1f5dcfb894a6cc47aa0368f87a89c98c7e8/gdx-backend-gwt-1.9.3-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/1a3775429980a6c8da0cdefb656ad1dabf91d629/gdx-1.9.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.6.0/d1e40c23bf78192482ee76c93619a10b4ea649f7/gwt-servlet-2.6.0.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.1/c078b1b8cc0281214b0eb458d2c283d039374fad/gwt-user-2.6.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20090211/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar" />
-          </element>
-        </element>
-        <element id="directory" name="META-INF">
-          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/html/exploded/html-draft-1.0.war/META-INF/MANIFEST.MF" />
-        </element>
-      </root>
-    </artifact>
-    <artifact type="war" name="Gradle : libgdx-drop : html-1.0.war">
-      <output-path>$PROJECT_DIR$/out/artifacts/html</output-path>
-      <properties id="gradle-properties">
-        <options external-project-path="$PROJECT_DIR$" />
-      </properties>
-      <root id="archive" name="html-1.0.war">
-        <element id="javaee-facet-resources" facet="html/web/Web Gradle : html-1.0.war" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="html" />
-          </element>
-          <element id="directory" name="lib">
-            <element id="archive" name="libgdx-drop-core-1.0.jar">
-              <element id="module-output" name="core" />
-            </element>
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/d39621b517bc4791493378745ac45e272b65b9eb/gdx-backend-gwt-1.9.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/aa9eb1f5dcfb894a6cc47aa0368f87a89c98c7e8/gdx-backend-gwt-1.9.3-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/1a3775429980a6c8da0cdefb656ad1dabf91d629/gdx-1.9.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.6.0/d1e40c23bf78192482ee76c93619a10b4ea649f7/gwt-servlet-2.6.0.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.1/c078b1b8cc0281214b0eb458d2c283d039374fad/gwt-user-2.6.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20090211/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar" />
-          </element>
-        </element>
-        <element id="directory" name="META-INF">
-          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/html/exploded/html-1.0.war/META-INF/MANIFEST.MF" />
-        </element>
-      </root>
-    </artifact>
-    <artifact type="exploded-war" name="Gradle : libgdx-drop : html-1.0.war (exploded)">
-      <output-path>$PROJECT_DIR$/out/artifacts/html/exploded/html-1.0.war</output-path>
-      <properties id="gradle-properties">
-        <options external-project-path="$PROJECT_DIR$" />
-      </properties>
-      <root id="root">
-        <element id="javaee-facet-resources" facet="html/web/Web Gradle : html-1.0.war" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="classes">
-            <element id="module-output" name="html" />
-          </element>
-          <element id="directory" name="lib">
-            <element id="archive" name="libgdx-drop-core-1.0.jar">
-              <element id="module-output" name="core" />
-            </element>
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/d39621b517bc4791493378745ac45e272b65b9eb/gdx-backend-gwt-1.9.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/aa9eb1f5dcfb894a6cc47aa0368f87a89c98c7e8/gdx-backend-gwt-1.9.3-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/1a3775429980a6c8da0cdefb656ad1dabf91d629/gdx-1.9.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.6.0/d1e40c23bf78192482ee76c93619a10b4ea649f7/gwt-servlet-2.6.0.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.1/c078b1b8cc0281214b0eb458d2c283d039374fad/gwt-user-2.6.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20090211/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar" />
-          </element>
-        </element>
-        <element id="directory" name="META-INF">
-          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/html/exploded/html-1.0.war/META-INF/MANIFEST.MF" />
-        </element>
-      </root>
-    </artifact>
-  </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions>
@@ -245,16 +119,6 @@
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar!/" />
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar!/" />
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="gdx-1.9.3-sources">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.3/2bf97653cc496f9ef2f76ecf2f29b1918821f474/gdx-1.9.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="gdx-backend-android-1.9.3">
@@ -266,24 +130,6 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.3/a6d510614c8b930ca931a72841c81b91c045012/gdx-backend-android-1.9.3-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="gdx-backend-gwt-1.9.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/d39621b517bc4791493378745ac45e272b65b9eb/gdx-backend-gwt-1.9.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/aa9eb1f5dcfb894a6cc47aa0368f87a89c98c7e8/gdx-backend-gwt-1.9.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="gdx-backend-gwt-1.9.3-sources">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/aa9eb1f5dcfb894a6cc47aa0368f87a89c98c7e8/gdx-backend-gwt-1.9.3-sources.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-gwt/1.9.3/aa9eb1f5dcfb894a6cc47aa0368f87a89c98c7e8/gdx-backend-gwt-1.9.3-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="gdx-backend-lwjgl-1.9.3">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.3/88bc98f6155e1f63462ba03622ffaf25557dccc0/gdx-backend-lwjgl-1.9.3.jar!/" />
@@ -293,30 +139,29 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.3/7b68e24f28daece0760c36360cfa9da18057a443/gdx-backend-lwjgl-1.9.3-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="gdx-freetype-1.9.3">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.3/dc44a8c15ce18fec8cdbdbd74bbb8bce3ccbba84/gdx-freetype-1.9.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.3/67ab670c6fa98a1e8d7b0ac48d9f31b893742a16/gdx-freetype-1.9.3-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.3/67ab670c6fa98a1e8d7b0ac48d9f31b893742a16/gdx-freetype-1.9.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="gdx-freetype-platform-1.9.3-natives-desktop">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype-platform/1.9.3/714c710ce6f3dcbd5c570ad265a591e59f37ecf3/gdx-freetype-platform-1.9.3-natives-desktop.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="gdx-platform-1.9.3-natives-desktop">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-platform/1.9.3/56b040cddca30bd248c8453863f71bad77adb107/gdx-platform-1.9.3-natives-desktop.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
-    </library>
-    <library name="gwt-servlet-2.6.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.6.0/d1e40c23bf78192482ee76c93619a10b4ea649f7/gwt-servlet-2.6.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.6.0/7a59cc91e16f255d22b692dcc5839d3eb1d606c6/gwt-servlet-2.6.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="gwt-user-2.6.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.1/c078b1b8cc0281214b0eb458d2c283d039374fad/gwt-user-2.6.1.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.6.1/c32cc6470243fe2703e807e1025ec3354fba0ef8/gwt-user-2.6.1-sources.jar!/" />
-      </SOURCES>
     </library>
     <library name="jinput-2.0.5">
       <CLASSES>
@@ -366,13 +211,6 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jcraft/jorbis/0.0.17/5446be5d62e4c6b347c8e6cd28dc00a936417ba2/jorbis-0.0.17-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="json-20090211">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20090211/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
     <library name="jutils-1.0.0">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar!/" />
@@ -419,24 +257,6 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.2/308d4ebe8d7b240d3490b6a7e0424807ea3ad98b/lwjgl_util-2.9.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="validation-api-1.0.0.GA">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="validation-api-1.0.0.GA-sources">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar!/" />
       </SOURCES>
     </library>
   </component>
