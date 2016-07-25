@@ -9,25 +9,37 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFont
 
 public class Drop extends Game {
 	public SpriteBatch batch;
-	public BitmapFont font;
+	public BitmapFont font20, font30, font100;
+	private FreeTypeFontGenerator generator;
+	private FreeTypeFontParameter parameter;
 
 	public void create() {
 		batch = new SpriteBatch();
 
-		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("fonts/Jellee-Roman.ttf"));
-		FreeTypeFontParameter parameter = new FreeTypeFontParameter();
-		parameter.size = 20;
+		generator = new FreeTypeFontGenerator(Gdx.files.internal("fonts/Jellee-Roman.ttf"));
+		parameter = new FreeTypeFontParameter();
 
-		font = generator.generateFont(parameter);
+		parameter.size = 20;
+		font20 = generator.generateFont(parameter);
+
+		parameter.size = 30;
+		font30 = generator.generateFont(parameter);
+
+		parameter.size = 100;
+		font100 = generator.generateFont(parameter);
+
 		this.setScreen(new MainMenuScreen(this));
 	}
 
 	public void render() {
-		super.render(); // required to render the screen specified inside create()
+		// required to render the screen specified inside create()
+		super.render();
 	}
 
 	public void dispose() {
 		batch.dispose();
-		font.dispose();
+		generator.dispose();
+		font20.dispose();
+		font30.dispose();
 	}
 }

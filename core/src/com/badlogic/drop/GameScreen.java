@@ -100,8 +100,8 @@ public class GameScreen implements Screen {
         for (Rectangle raindrop : raindrops) {
             game.batch.draw(dropImage, raindrop.x, raindrop.y);
         }
-        game.font.draw(game.batch, "Drops Collected: " + dropsGathered, 5, 475);
-        game.font.draw(game.batch, "Drops Missed: " + dropsMissed, 5, 455);
+        game.font20.draw(game.batch, "Drops Collected: " + dropsGathered, 5, 475);
+        game.font20.draw(game.batch, "Drops Missed: " + dropsMissed, 5, 455);
         game.batch.end();
 
         // process user input
